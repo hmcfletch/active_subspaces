@@ -1,12 +1,11 @@
 from unittest import TestCase
 import unittest
 import active_subspaces.utils.quadrature as gq
-import helper
 import numpy as np
 import logging as log
 
 class TestQuadrature(TestCase):
-    
+
     def test_r_hermite_type_error(self):
         self.assertRaises(TypeError, gq.r_hermite, 'string')
 
